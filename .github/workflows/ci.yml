@@ -40,5 +40,8 @@ jobs:
           sudo mv migrate.linux-amd64 /usr/local/bin/migrate
           which migrate
 
+      - name: Migrate Up
+        run: make migrateup
+
       - name: Test
         run: make test
